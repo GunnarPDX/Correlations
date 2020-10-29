@@ -2,6 +2,10 @@
 
 [WIP] A financial correlations library for elixir, fully compatible with the elixir `Decimal` library.
 
+![correlation matrix img](https://github.com/GunnarPDX/correlation-matrix-chart/blob/master/corr-matrix.png?raw=true)
+
+### Example frontend usage
+[https://github.com/GunnarPDX/correlation-matrix-chart]
 
 ## Installation
 
@@ -34,9 +38,10 @@ be found at [https://hexdocs.pm/correlations](https://hexdocs.pm/correlations).
 - `correlation(x, y)`
 
 
-## EX
-![correlation matrix img](https://github.com/GunnarPDX/correlation-matrix-chart/blob/master/corr-matrix.png?raw=true)
-
+## Usage
+```elixir
+...
+```
 
 ## To Dos
 - add opts for standard/downside volatility
