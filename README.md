@@ -2,10 +2,10 @@
 
 [WIP] A financial correlations library for elixir, fully compatible with the elixir `Decimal` library.
 
-![correlation matrix img](https://github.com/GunnarPDX/correlation-matrix-chart/blob/master/corr-matrix.png?raw=true)
+![correlation matrix img](https://github.com/GunnarPDX/correlation-matrix-chart/blob/master/correlation-matrix.png?raw=true)
 
 ### Example frontend usage
-[https://github.com/GunnarPDX/correlation-matrix-chart]
+https://github.com/GunnarPDX/Nice-Charts
 
 ## Installation
 
