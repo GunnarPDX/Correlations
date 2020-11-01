@@ -61,8 +61,8 @@ iex> C.portfolio_correlations_picker(decimal_stocks, 2)
 
 ## To Dos
 
-[ ] add opts for standard/downside volatility
+- add opts for standard/downside volatility
 
-[ ] add JSON method for graph data structure
+- add JSON method for graph data structure
 
-[ ] finish hex docs
+- finish hex docs
