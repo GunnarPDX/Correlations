@@ -17,7 +17,7 @@ This package can be installed by adding `correlations` to your list of dependenc
 ```elixir
 def deps do
   [
-    {:correlations, "~> 0.1.0"},
+    {:correlations, "~> 0.1.1"},
   ]
 end
 ```
