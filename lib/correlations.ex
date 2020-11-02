@@ -107,11 +107,11 @@ defmodule Correlations do
   end
 
   # end when tail is empty
-  def correlation_matrix([_], acc) do
+  defp correlation_matrix([_], acc) do
     E.reverse(acc)
   end
 
-  def correlation_matrix([head|tail], acc) do
+  defp correlation_matrix([head|tail], acc) do
     # find correlation coefficient pair combinations for head with remaining stocks
     res = correlation_coefs(head, tail, []) |> E.reverse() # reverse list to 'fix/prettify' data order
     # repeat for remaining stocks
@@ -119,7 +119,7 @@ defmodule Correlations do
   end
 
   # shouldn't ever get reached
-  def correlation_matrix([], acc),
+  defp correlation_matrix([], acc),
       do: E.reverse(acc)
 
 
