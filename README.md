@@ -1,6 +1,9 @@
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+[![Hex.pm Version](http://img.shields.io/hexpm/v/correlations.svg?style=flat)](https://hex.pm/packages/correlations)
+
 # Correlations
 
-[WIP] A financial correlations library for elixir, fully compatible with the elixir `Decimal` library.
+A financial correlations library for elixir, fully compatible with the elixir `Decimal` library.
 
 ![correlation matrix img](https://github.com/GunnarPDX/correlation-matrix-chart/blob/master/correlation-matrix.png?raw=true)
 
@@ -9,25 +12,19 @@ https://github.com/GunnarPDX/Nice-Charts
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `correlations` to your list of dependencies in `mix.exs`:
+This package can be installed by adding `correlations` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:correlations, "~> 0.1.0"}
+    {:correlations, "~> 0.1.0"},
   ]
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/correlations](https://hexdocs.pm/correlations).
-
-
 ## Docs
 
-HexDocs link coming soon.
+#### HexDocs: [https://hexdocs.pm/correlations](https://hexdocs.pm/correlations/0.1.0/Correlations.html#functions)
 
 ## Functions
 
@@ -56,13 +53,5 @@ iex> stocks = [
 iex> decimal_stocks = for {k, v} <- stocks, do: {k, decimalize(v)}
 
 iex> C.portfolio_correlations_picker(decimal_stocks, 2)
-{#Decimal<0.104192125>, [:aapl, :tsla]}
+{Decimal<0.104192125>, [:aapl, :tsla]}
 ```
-
-## To Dos
-
-- add opts for standard/downside volatility
-
-- add JSON method for graph data structure
-
-- finish hex docs

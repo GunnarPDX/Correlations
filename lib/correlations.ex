@@ -178,7 +178,7 @@ defmodule Correlations do
 
 
   @doc false
-  # TODO: use this?
+  # TODO
   defp _get_downside_changes(stocks),
        do: for {k, v} <- stocks, do: {k, _downside_changes(v)}
 
