@@ -24,7 +24,7 @@ end
 
 ## Docs
 
-#### HexDocs: [https://hexdocs.pm/correlations](https://hexdocs.pm/correlations/0.1.0/Correlations.html#functions)
+#### HexDocs: [https://hexdocs.pm/correlations](https://hexdocs.pm/correlations/Correlations.html#functions)
 
 ## Functions
 

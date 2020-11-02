@@ -24,6 +24,7 @@ defmodule Correlations do
   Picks the optimal portfolio combination with lowest correlation coefficient
 
   ## Examples
+  ```
   iex> stocks = [aapl: [#Decimal<124.400002>, #Decimal<121.099998>, ...], nvda: [#Decimal<552.460022>, ...], ... ]
   ...
 
@@ -32,6 +33,7 @@ defmodule Correlations do
 
   iex> portfolio_correlations_picker(stocks, portfolio_size)
   {#Decimal<0.104192125>, [:aapl, :tsla]}
+  ```
   """
   @spec portfolio_correlations_picker(list({atom, list(decimal)}), integer) :: {decimal, list(atom)}
 
@@ -49,6 +51,7 @@ defmodule Correlations do
   Creates a list of portfolio combinations with correlation coefficients
 
   ## Examples
+  ```
   iex> stocks = [aapl: [#Decimal<124.400002>, #Decimal<121.099998>, ...], nvda: [#Decimal<552.460022>, ...], ... ]
   ...
 
@@ -64,6 +67,7 @@ defmodule Correlations do
     {#Decimal<0.867990065>, [:amzn, :nvda]},
     {#Decimal<0.236184044>, [:amzn, :tsla]}
   ]
+  ```
   """
   @spec portfolio_correlations_list(list({atom, list(decimal)}), integer) :: list({decimal, list(atom)})
 
@@ -87,6 +91,7 @@ defmodule Correlations do
   Creates a correlation matrix from a list of products
 
   ## Examples
+  ```
   iex> stocks = [aapl: [#Decimal<124.400002>, #Decimal<121.099998>, ...], nvda: [#Decimal<552.460022>, ...], ... ]
   ...
 
@@ -96,6 +101,7 @@ defmodule Correlations do
     [{:nvda, :tsla, #Decimal<0.198672188>}, {:nvda, :amzn, #Decimal<0.867990063>}],
     [{:tsla, :amzn, #Decimal<0.236184044>}],
   ]
+  ```
   """
   @spec correlation_matrix(list({atom, list(decimal)})) :: list(list({atom, atom, decimal}))
   def correlation_matrix(stocks) do
@@ -220,6 +226,7 @@ defmodule Correlations do
   Finds the correlation coefficient between two lists of decimals
 
   ## Examples
+  ```
   iex> list1 = [#Decimal<124.400002>, #Decimal<121.099998>, ...]
   ...
 
@@ -228,7 +235,7 @@ defmodule Correlations do
 
   iex> correlation(list1, list2)
   #Decimal<0.809616345>
-
+  ```
   """
   @spec correlation(list(decimal), list(decimal)) :: decimal
   def correlation(x, y) when length(x) == length(y) do
